@@ -1,0 +1,103 @@
+/* HEADER and BODY */
+h1 {
+    text-align:center;
+    margin:5px;
+    color: #A8C38C;
+    font-size: 70px;
+}
+h2 {
+    text-align:center;
+    margin:5px;
+    color: #A8C38C;
+    font-size: 45px;
+}
+body {
+    background-color:#4F3B34;
+}
+/* IMAGES */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:600px;
+}
+.glasses {
+    position: fixed;
+    top: 870px;
+    right: 22px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 20%;
+    shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.circle {
+    position: fixed;
+    top: 810px;
+    right: 0.5px;
+    width: 150px;
+    cursor: pointer;
+}
+
+/* SECTIONS */
+.section-container {
+    display:flex;
+    justify-content:space-between;
+}
+.section {
+    border: 5px #A8C38C solid;
+    margin:5px;
+    color: #A8C38C;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+    background-color: #594e4a;
+}
+.section:hover {
+  background-color:#594e4a;
+  font-size: 45px;
+  size: 50px;
+}
+/* LINKS */
+.Link {
+    color: #b2e2f0;
+    font-size: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+.Link:hover {
+  background-color:#5c5755;
+  font-size: 35px;
+  animation-name: myAnimation;
+  animation-duration: 2s;
+}
+/* LANGUAGE STUFF */
+.navbar {
+    position: fixed;
+    font-size: 30px;
+    color: #A8C38C;
+}
+.Lang {
+    color: #A8C38C;
+    font-size: 34px;
+    text-align: center;
+    cursor: pointer;
+}
+.Lang:hover {
+  background-color:#594e4a;
+  font-size: 35px;
+  animation-name: myAnimation;
+  animation-duration: 3s;
+}
+/* FOOTER */
+.footer {
+    font-size: 40px;
+    color: #A8C38C;
+    text-align: center;
+}
+
+/* ANIMATION */
+@keyframes myAnimation {
+  from {font-size: 35px;}
+  to {font-size: 50px;}
+}
