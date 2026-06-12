@@ -23,16 +23,16 @@ img {
 }
 .glasses {
     position: fixed;
-    top: 870px;
+    top: 770px;
     right: 22px;
     width: 100px;
     cursor: pointer;
     border-radius: 20%;
-    shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .circle {
     position: fixed;
-    top: 810px;
+    top: 710px;
     right: 0.5px;
     width: 150px;
     cursor: pointer;
