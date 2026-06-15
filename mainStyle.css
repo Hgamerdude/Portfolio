@@ -38,6 +38,7 @@ footer {
     grid-template-columns: 2fr 2fr;
     gap: .4rem;
 }
+
 a.contact-link {
     color: white;
     text-decoration: none;
@@ -51,6 +52,42 @@ a.contact-link:hover {
     animation-duration: 450s;
 
 }
+a.project-link {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 4px;
+    line-height: 0.3em;
+    font-size: 30px;
+}
+a.project-link:hover {
+    text-decoration: underline;
+    animation: myAnimation;
+    animation-duration: 450s;
+
+}
+.project-container {
+    place-items: center;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: .4rem;
+    background: black;
+    margin: 4px;
+}
+.project-space {
+    background-color: black;
+    color: white;
+    padding: 4px 4px;
+    margin-top: 4px;
+    font-size: 30px;
+}
+.project-description {
+    background-color: black;
+    color: white;
+    padding: 4px 4px;
+    margin-top: 4px;
+    font-size: 30px;
+}
+
 @keyframes myAnimation {
   0%   {color: rgb(214, 214, 214); font-size: 30px;}
   0.003%  {color: rgb(213, 213, 213); font-size: 30.125px; line-height: 0.4em;}
