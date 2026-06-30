@@ -1,13 +1,16 @@
 //Objects declare
 let ballA = {
     x: 0,
-    y: 634,
+    y: 850,
     vx: 0,
     vy: 0,
     ax: 0,
     ay: 980 
 };
 let hold = false;
+
+let threshold = 0;
+
 //Object connect to html
 let ball1 = document.querySelector(".o1");
 
@@ -17,11 +20,11 @@ let accumulator = 0;
 const fixedDt = 0.016; // 60 FPS
 
 function fX(){
-    let a = 400;
+    let a = 0;
     return a;
 }
 function fY(){
-    let b = 634;
+    let b = 850;
     return b;
 }
 function fVX(){
@@ -48,9 +51,9 @@ function update(dt) {
     ballA.y += ballA.vy * dt; 
 
     // Floor
-    const floor = window.innerHeight - 200;
+    const floor = 850;
 
-    if (ballA.y >= floor) {
+    if(ballA.y >= floor) {
         ballA.y = floor;
         ballA.vy *= -.75;
         // friction
@@ -72,15 +75,44 @@ function update(dt) {
     let radius = 75;
 
     // Right
-    if (ballA.x + radius >= wallR) {
+    if(ballA.x + radius >= wallR) {
         ballA.x = wallR - radius;
         ballA.vx *= -1;
     }
 
     // Left
-    if (ballA.x - radius <= wallL) {
+    if(ballA.x - radius <= wallL) {
         ballA.x = wallL + radius;
         ballA.vx *= -1;
+    }
+
+    //Project Rectangles
+    if((ballA.x >= 1000) && (ballA.x <= 1200)){
+        if((((ballA.y >= 490) && (ballA.y <= 690)) || ((ballA.y >= 110) && (ballA.y <= 310)))){
+            ballA.vx *= -.95;
+        }
+    }
+    if(ballA.x >= 1050){
+        ballA.vx *= .9;
+        ballA.vy *= .6;
+        
+        if(ballA.x >=1150){
+            if(ballA.y>=700){
+                threshold = 1; // 1 is Playlist Project
+            }
+            else if(ballA.y>=320){
+                threshold = 2 // 2 is CYOA Project
+            }
+            else{
+                threshold = 3 // 3 is Change Project
+            }
+            console.log(threshold);
+        }
+
+        if(ballA.vy <= 50){
+            ballA.vy = 0;
+            ballA.ay = 0;
+        }
     }
 
     // Render
@@ -92,6 +124,31 @@ function update(dt) {
         "x:", ballA.x.toFixed(2),
         "y:", ballA.y.toFixed(2),
     );
+
+    let p = document.querySelector("p");
+    let a = document.querySelector(".project-link");
+
+
+    if(threshold === 1){
+        p.innerHTML = "<h2>Playlist Project<h2> <br> A project I did on my own where I focused on creating <br> a nice playlist where you can just compile songs and with a nice <br> design. Testing my abilities in HTML, javascript and CSS.";
+        a.innerHTML = "Visit Project!";
+        a.href = "#";
+    }
+    else if(threshold === 2){
+        p.innerHTML = "<h2>CYOA Project<h2> <br> A project testing my abilities in javascript which I demonstrated <br> mathematical capabilities and adventure related to ducks while <br> also utilizing HTML and CSS.";
+        a.innerHTML = "Visit Project!";
+        a.href = "#";
+    }
+    else if(threshold === 3){
+        p.innerHTML = "<h2>Playlist Project<h2> <br> A project testing my abilities in HTML and CSS and I also <br> incorporated accessibility options for different languages. This <br> project also has the good message that food waste is bad";
+        a.innerHTML = "Visit Project!";
+        a.href = "ChangeProject-main/indexEN.html";
+    }
+    else{
+        p.innerHTML = "Shoot towards the different items to see my projects!";
+        a.innerHTML = "";
+        a.href = "";
+    }
 }
 
 
@@ -116,19 +173,18 @@ requestAnimationFrame(gameLoop);
 let launch = document.querySelector(".launch");
 let input = document.querySelector("input");
 
-
 launch.addEventListener("click", function(){
 
     ball1.style.visibility = "visible";
+    threshold = 0;
     
     ballA.x = 0;
-    ballA.y = 634;
+    ballA.y = 850;
+    ballA.ay = 980;
 
     let angle = input.value;
     angle *= Math.PI;
     angle /= 180;
-
-    console.log("LAUNCH");
 
     let sin = Math.sin(angle);
     let cos = Math.cos(angle);
