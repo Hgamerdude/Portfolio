@@ -21,10 +21,10 @@ header {
 }
 .navRectangle{
     z-index: 0;
-    height: 26px;
+    height: 79px;
     width: 1650px;
     position:absolute;
-    top: 37px;
+    top: 0px;
     left: 8px;
     background-color: black;
 }
@@ -37,6 +37,7 @@ header {
 .nav-link{
     position:relative;
     z-index: 1000;
+    font-size: 30px;
 }
 footer {
     background-color: black;
@@ -58,24 +59,32 @@ footer {
     z-index: 1200;
 }
 .cannon{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     position: absolute;
     z-index: 1000;
     left: 0px;
-    top: 850px;
+    top: 800px;
 }
 button{
     position:absolute;
     top: 945px;
     left: 100px;
-    z-index: 1001;
+    z-index: 13000;
+    height: 65px;
+    width: 150px
 }
 input{
     position:absolute;
     top: 945px;
     left: 10px;
-    z-index: 1001;
+    z-index: 13000;
+    height: 60px;
+    width: 150px
+}
+.stuff,
+.launch{
+    font-size:35px;
 }
 .rectangle-divider1{
     position:absolute;

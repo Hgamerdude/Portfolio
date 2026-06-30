@@ -19,6 +19,9 @@ header {
     background-color: white;
     color: black;
 }
+.nav-link{
+    font-size: 30px;
+}
 /* The code below makes the background of the footer black and the font color of the text white. Change this to match what you want for your website. */
 footer {
     background-color: black;
@@ -63,14 +66,6 @@ a.project-link:hover {
     animation: myAnimation;
     animation-duration: 450s;
 
-}
-.project-container {
-    place-items: center;
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    gap: .4rem;
-    background: black;
-    margin: 4px;
 }
 .project-space {
     background-color: black;
