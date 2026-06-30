@@ -101,10 +101,10 @@ function update(dt) {
                 threshold = 1; // 1 is Playlist Project
             }
             else if(ballA.y>=320){
-                threshold = 2 // 2 is CYOA Project
+                threshold = 2; // 2 is CYOA Project
             }
             else{
-                threshold = 3 // 3 is Change Project
+                threshold = 3; // 3 is Change Project
             }
             console.log(threshold);
         }
@@ -132,12 +132,12 @@ function update(dt) {
     if(threshold === 1){
         p.innerHTML = "<h2>Playlist Project<h2> <br> A project I did on my own where I focused on creating <br> a nice playlist where you can just compile songs and with a nice <br> design. Testing my abilities in HTML, javascript and CSS.";
         a.innerHTML = "Visit Project!";
-        a.href = "#";
+        a.href = "PlaylistProject-main/index.html";
     }
     else if(threshold === 2){
         p.innerHTML = "<h2>CYOA Project<h2> <br> A project testing my abilities in javascript which I demonstrated <br> mathematical capabilities and adventure related to ducks while <br> also utilizing HTML and CSS.";
         a.innerHTML = "Visit Project!";
-        a.href = "#";
+        a.href = "CYOA-main/index.html";
     }
     else if(threshold === 3){
         p.innerHTML = "<h2>Playlist Project<h2> <br> A project testing my abilities in HTML and CSS and I also <br> incorporated accessibility options for different languages. This <br> project also has the good message that food waste is bad";

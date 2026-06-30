@@ -1,0 +1,91 @@
+/* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
+
+/* 
+.option-one-screen, 
+.option-two-screen, 
+.option-one-end, 
+.option-two-end  {
+   display:none;
+}
+*/
+
+
+/* Feel free to change any of the styling below!*/
+html {
+    background-color: yellow;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    font-family: 'Courier New', Courier, monospace;
+}
+.background{
+    background-color: orange;
+}
+p{
+    color:rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+/* Style the body with a background color or image if desired */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* Style the title of your story */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: orange;
+}
+
+
+/* Style the option buttons */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #0073ed;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.attack, .defend {
+    visibility:hidden;
+}
+
+
+
+.mainImage{
+    position: relative;
+    animation: mymove 3s infinite;
+    visibility: hidden;
+}
+@keyframes mymove {
+0% {
+    left: 75px;
+}
+50%{
+    left: -75px;
+}
+100%{
+    left:75px;
+}
+}
+
+input{
+    visibility: hidden;
+}

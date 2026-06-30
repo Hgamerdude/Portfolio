@@ -1,0 +1,76 @@
+/* Chunks of stuff in HTML */
+h1 {
+  text-align: center;
+  color: #AD1A00;
+}
+
+body {
+  background-color: #00d8ff;
+}
+
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.display div {
+  width: 200px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: #AD1A00;
+
+  transition: transform 0.3s ease;
+}
+
+input {
+  padding: 5px 10px;
+  font-size: 14px;
+  color: #00d8ff;
+  background-color: #3c1c16;
+}
+
+button {
+  font-size: 14px;
+  padding: 5px 10px;
+  color: #00d8ff;
+  background-color: #AD1A00;
+}
+
+/* Hover for cards */
+.display div:hover {
+  transform: scale(1.10);
+}
+
+/* Sizing with stuff */
+.display img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.display h2 {
+  font-size: 14px;
+  margin: 5px;
+  color: #00d8ff;
+}
+
+::placeholder {
+  color: #00d8ff;
+}
+
+/* links */
+a {
+  display: block;
+  text-decoration: none;
+}
+
+a:link {
+  color: #00d8ff;
+}
+
+a:visited {
+  color: #afeffa;
+}
