@@ -50,7 +50,6 @@ a.contact-link:hover {
     text-decoration: underline;
     animation: myAnimation;
     animation-duration: 450s;
-
 }
 a.project-link {
     color: white;
