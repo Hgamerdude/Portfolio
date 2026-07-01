@@ -5,7 +5,7 @@ let ballA = {
     vx: fVX(),
     vy: fVY(),
     ax: 0,
-    ay: 980 
+    ay: 0 
 };
 let bY = 400;
 let bVY = Math.random() * 1000;
@@ -15,7 +15,7 @@ let ballB = {
     vx: fVX(),
     vy: bVY,
     ax: 0,
-    ay: 980 
+    ay: 0 
 };
 let ballC = {
     x: fX(),
@@ -23,7 +23,7 @@ let ballC = {
     vx: fVX(),
     vy: fVY(),
     ax: 0,
-    ay: 980 
+    ay: 0 
 }
 let ballD = {
     x: fX(),
@@ -31,7 +31,7 @@ let ballD = {
     vx: fVX(),
     vy: fVY(),
     ax: 0,
-    ay: 980
+    ay: 0
 }
 
 
@@ -259,13 +259,13 @@ button.addEventListener("click", function(){
         if(temp >= 100){
             header.style.backgroundColor = "red";
             header.style.color = "black";
+            tempH =true;
         }
         if((temp > 0) && (temp < 100)){
             header.style.backgroundColor = "blue"; 
             header.style.color = "white";
         }
 
-        ball.ay = 200;
         if(temp >= 200){
             t *= 10 * (temp / 100);
         }
