@@ -1,0 +1,154 @@
+/* The code below makes the background of the header black and the font color of the title white. Change this to match what you want for your website. */
+header {
+    background-color: black;
+    color: white;
+    padding: 64px 16px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+.nav-link{
+    font-size: 30px;
+}
+/* The code below makes the background of the footer black and the font color of the text white. Change this to match what you want for your website. */
+footer {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+.about-me {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Times New Roman', Georgia, serif;
+  padding: 100px 60px;
+  position: relative;
+  overflow: hidden;
+}
+.about-me::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+.photo-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+.profile-pic {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  position: relative;
+  z-index: 2;
+}
+.photo-ring {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.3);
+  z-index: 1;
+}
+.about-text {
+  max-width: 1000px;
+}
+.eyebrow {
+  display: block;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 6px;
+}
+.about-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.about-text p {
+  font-size: 30px;
+  line-height: 1.8;
+  color: #d9d9d9;
+  margin-bottom: 40px;
+}
+.highlights {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+}
+.highlight-num {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.highlight-label {
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #999;
+  margin-top: 6px;
+}
+.cta-btn {
+  display: inline-block;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000;
+  background: #ffffff;
+  padding: 14px 32px;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: opacity 0.2s ease;
+}
+.cta-btn:hover {
+  opacity: 0.8;
+}
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  .highlights {
+    justify-content: center;
+  }
+  .photo-ring {
+    display: none;
+  }
+}

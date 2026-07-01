@@ -143,7 +143,7 @@ function update(dt) {
     }
     else if(threshold === 3){
         p.style.fontSize = "20px";
-        p.innerHTML = "<h2>Playlist Project<h2> <br> A project testing my abilities in HTML and CSS and I also <br> incorporated accessibility options for different languages. This <br> project also has the good message that food waste is bad";
+        p.innerHTML = "<h2>Change Project<h2> <br> A project testing my abilities in HTML and CSS and I also <br> incorporated accessibility options for different languages. This <br> project also has the good message that food waste is bad";
         a.innerHTML = "Visit Project!";
         a.href = "ChangeProject-main/indexEN.html";
     }

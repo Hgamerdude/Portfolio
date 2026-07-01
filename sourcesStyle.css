@@ -1,0 +1,124 @@
+/* The code below makes the background of the header black and the font color of the title white. Change this to match what you want for your website. */
+header {
+    background-color: black;
+    color: white;
+    padding: 64px 16px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+.nav-link{
+    font-size: 30px;
+}
+/* The code below makes the background of the footer black and the font color of the text white. Change this to match what you want for your website. */
+footer {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+.image-sources {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Times New Roman', Georgia, serif;
+  padding: 80px 60px;
+}
+
+.page-header {
+  margin-bottom: 50px;
+}
+
+.eyebrow {
+  display: block;
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 12px;
+}
+
+.page-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 24px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.source-card {
+  background-color: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+.source-card-white {
+  background-color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  overflow: hidden;
+}
+
+.source-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.source-card.wide .source-img {
+  height: 320px;
+}
+
+.source-text.wide{
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #999;
+  padding: 14px 18px;
+  margin: 0;
+  line-height: 1.5;
+  background-color: black;
+}
+
+.source-caption {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #999;
+  padding: 14px 18px;
+  margin: 0;
+  line-height: 1.5;
+}
+.source-caption-black {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  color: #2b2b2b;
+  padding: 14px 18px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+.source-caption a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.source-caption a:hover {
+  color: #ccc;
+}
