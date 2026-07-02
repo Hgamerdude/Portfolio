@@ -131,25 +131,25 @@ function update(dt) {
 
     if(threshold === 1){
         p.style.fontSize = "20px";
-        p.innerHTML = "<h2>Playlist Project<h2> <br> A project I did on my own where I focused on creating <br> a nice playlist where you can just compile songs and with a nice <br> design. Testing my abilities in HTML, javascript and CSS.";
-        a.innerHTML = "Visit Project!";
+        p.innerHTML = "<h2>Proyecto de Lista de Reproducción<h2> <br> Un proyecto que hice por mi cuenta donde me enfoqué en crear <br> una buena lista de reproducción donde puedes simplemente compilar canciones con un buen <br> diseño. Probando mis habilidades en HTML, javascript y CSS.";
+        a.innerHTML = "¡Visitar Proyecto!";
         a.href = "https://hgamerdude.github.io/flw1-playlist-22-23-starter/";
     }
     else if(threshold === 2){
         p.style.fontSize = "20px";
-        p.innerHTML = "<h2>CYOA Project<h2> <br> A project testing my abilities in javascript which I demonstrated <br> mathematical capabilities and adventure related to ducks while <br> also utilizing HTML and CSS.";
-        a.innerHTML = "Visit Project!";
+        p.innerHTML = "<h2>Proyecto CYOA<h2> <br> Un proyecto que pone a prueba mis habilidades en javascript en el que demostré <br> capacidades matemáticas y una aventura relacionada con patos mientras <br> también utilizo HTML y CSS.";
+        a.innerHTML = "¡Visitar Proyecto!";
         a.href = "https://hgamerdude.github.io/int-u3-project-starter-code/";
     }
     else if(threshold === 3){
         p.style.fontSize = "20px";
-        p.innerHTML = "<h2>Change Project<h2> <br> A project testing my abilities in HTML and CSS and I also <br> incorporated accessibility options for different languages. This <br> project also has the good message that food waste is bad";
-        a.innerHTML = "Visit Project!";
+        p.innerHTML = "<h2>Proyecto Cambio<h2> <br> Un proyecto que pone a prueba mis habilidades en HTML y CSS y también <br> incorporé opciones de accesibilidad para diferentes idiomas. Este <br> proyecto también tiene el buen mensaje de que el desperdicio de comida es malo";
+        a.innerHTML = "¡Visitar Proyecto!";
         a.href = "https://hgamerdude.github.io/ChangeProject/indexEN.html";
     }
     else{
         p.style.fontSize = "30px";
-        p.innerHTML = "Shoot towards the different items to see my projects!";
+        p.innerHTML = "¡Apunta a los diferentes elementos para ver mis proyectos!";
         a.innerHTML = "";
         a.href = "";
     }

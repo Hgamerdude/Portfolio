@@ -1,0 +1,63 @@
+/* The code below makes the background of the header black and the font color of the title white. Change this to match what you want for your website. */
+header {
+    background-color: black;
+    color: white;
+    padding: 64px 16px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+.nav-link{
+    font-size: 30px;
+}
+/* The code below makes the background of the footer black and the font color of the text white. Change this to match what you want for your website. */
+
+.o1, .o2, .o3, .o4{
+    position: absolute;
+    border-radius: 10%;
+
+}
+img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10%;
+}  
+button{
+    position:absolute;
+    top: 243px;
+    left: 200px;
+    z-index: 13000;
+    font-size:40px;
+    height: 68px;
+    width: 180px
+}
+input{
+    position:absolute;
+    top: 244px;
+    left: 10px;
+    z-index: 13000;
+    font-size:40px;
+    height: 61px;
+    width: 200px
+}
+.text{
+    position:absolute;
+    top: 320px;
+    left: 10px;
+    font-size:30px;
+    height: 61px;
+    width: 200px
+}

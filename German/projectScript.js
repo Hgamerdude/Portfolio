@@ -36,7 +36,6 @@ function fVY(){
     return bb;
 }
 
-
 function update(dt) {
     //MATH
 
@@ -67,7 +66,6 @@ function update(dt) {
         ballA.y = 0;
         ballA.vy *= -.95;
     }
-
 
     //Walls
     let wallL = -100;
@@ -128,28 +126,27 @@ function update(dt) {
     let p = document.querySelector("p");
     let a = document.querySelector(".project-link");
 
-
     if(threshold === 1){
         p.style.fontSize = "20px";
-        p.innerHTML = "<h2>Playlist Project<h2> <br> A project I did on my own where I focused on creating <br> a nice playlist where you can just compile songs and with a nice <br> design. Testing my abilities in HTML, javascript and CSS.";
-        a.innerHTML = "Visit Project!";
+        p.innerHTML = "<h2>Playlist-Projekt<h2> <br> Ein Projekt, das ich selbst gemacht habe, bei dem ich mich darauf konzentriert habe, <br> eine schöne Playlist zu erstellen, in der man einfach Songs sammeln kann, mit einem schönen <br> Design. Es testet meine Fähigkeiten in HTML, JavaScript und CSS.";
+        a.innerHTML = "Projekt ansehen!";
         a.href = "https://hgamerdude.github.io/flw1-playlist-22-23-starter/";
     }
     else if(threshold === 2){
         p.style.fontSize = "20px";
-        p.innerHTML = "<h2>CYOA Project<h2> <br> A project testing my abilities in javascript which I demonstrated <br> mathematical capabilities and adventure related to ducks while <br> also utilizing HTML and CSS.";
-        a.innerHTML = "Visit Project!";
+        p.innerHTML = "<h2>CYOA-Projekt<h2> <br> Ein Projekt, das meine JavaScript-Fähigkeiten testet, bei dem ich <br> mathematische Fähigkeiten und ein Enten-Abenteuer demonstriert habe, während ich <br> HTML und CSS genutzt habe.";
+        a.innerHTML = "Projekt ansehen!";
         a.href = "https://hgamerdude.github.io/int-u3-project-starter-code/";
     }
     else if(threshold === 3){
         p.style.fontSize = "20px";
-        p.innerHTML = "<h2>Change Project<h2> <br> A project testing my abilities in HTML and CSS and I also <br> incorporated accessibility options for different languages. This <br> project also has the good message that food waste is bad";
-        a.innerHTML = "Visit Project!";
+        p.innerHTML = "<h2>Change-Projekt<h2> <br> Ein Projekt, das meine Fähigkeiten in HTML und CSS testet und bei dem ich <br> auch Barrierefreiheitsoptionen für verschiedene Sprachen integriert habe. Dieses <br> Projekt vermittelt außerdem die Botschaft, dass Lebensmittelverschwendung schlecht ist.";
+        a.innerHTML = "Projekt ansehen!";
         a.href = "https://hgamerdude.github.io/ChangeProject/indexEN.html";
     }
     else{
         p.style.fontSize = "30px";
-        p.innerHTML = "Shoot towards the different items to see my projects!";
+        p.innerHTML = "Schieße auf die verschiedenen Objekte, um meine Projekte zu sehen!";
         a.innerHTML = "";
         a.href = "";
     }

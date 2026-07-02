@@ -2,6 +2,7 @@ let counter1 = 0;
 let counter2 = 0;
 let counter3 = 0;
 let counter4 = 0;
+let counter5 = 0;
 
 document.querySelector(".b1").addEventListener("click", function(){
     if((counter1 % 2) === 0){
@@ -13,7 +14,8 @@ document.querySelector(".b1").addEventListener("click", function(){
         document.querySelector(".b2").innerHTML = "Technical Skills"
         document.querySelector(".b2").className ="b1";
     }
-        counter1 += 1;
+    counter1 += 1;
+    counter();
 });
 document.querySelector(".b3").addEventListener("click", function(){
     if((counter2 % 2) === 0){
@@ -25,7 +27,8 @@ document.querySelector(".b3").addEventListener("click", function(){
         document.querySelector(".b4").innerHTML = "Academic Skills"
         document.querySelector(".b4").className ="b3";
     }
-        counter2 += 1;
+    counter2 += 1;
+    counter();
 });
 document.querySelector(".b5").addEventListener("click", function(){
     if((counter3 % 2) === 0){
@@ -36,7 +39,8 @@ document.querySelector(".b5").addEventListener("click", function(){
         document.querySelector(".b6").innerHTML = "Professional Skills";
         document.querySelector(".b6").className ="b5";
     }
-        counter3 += 1;
+    counter3 += 1;
+    counter();
 });
 document.querySelector(".b7").addEventListener("click", function(){
     if((counter4 % 2) === 0){
@@ -49,3 +53,17 @@ document.querySelector(".b7").addEventListener("click", function(){
     }
         counter4 += 1;
 });
+
+
+function counter(){
+    if((counter5 % 2) === 0){
+        document.querySelector(".header1").className ="header2";
+        document.querySelector(".navbar").className ="navbar2";
+    };
+    if((counter5 % 2) === 1){
+        document.querySelector(".header2").className ="header1";
+        document.querySelector(".navbar2").className ="navbar";
+    }
+    counter5++;
+
+}
