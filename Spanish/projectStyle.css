@@ -59,12 +59,12 @@ footer {
     z-index: 1200;
 }
 .cannon{
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
     position: absolute;
     z-index: 1000;
     left: 0px;
-    top: 800px;
+    top: 780px;
 }
 button{
     position:absolute;
